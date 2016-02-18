@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3B01D9F173A29C8002B4BBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B01D9E173A29C8002B4BBC /* UIKit.framework */; };
+		D3B01DA1173A29C8002B4BBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B01DA0173A29C8002B4BBC /* Foundation.framework */; };
+		D3B01DA3173A29C8002B4BBC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B01DA2173A29C8002B4BBC /* CoreGraphics.framework */; };
+		D3B01DA9173A29C8002B4BBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3B01DA7173A29C8002B4BBC /* InfoPlist.strings */; };
+		D3B01DAB173A29C8002B4BBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B01DAA173A29C8002B4BBC /* main.m */; };
+		D3B01DAF173A29C8002B4BBC /* TestBLEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B01DAE173A29C8002B4BBC /* TestBLEAppDelegate.m */; };
+		D3B01DB1173A29C8002B4BBC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B01DB0173A29C8002B4BBC /* Default.png */; };
+		D3B01DB3173A29C8002B4BBC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B01DB2173A29C8002B4BBC /* Default@2x.png */; };
+		D3B01DB5173A29C8002B4BBC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B01DB4173A29C8002B4BBC /* Default-568h@2x.png */; };
+		D3B01DB8173A29C8002B4BBC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B01DB6173A29C8002B4BBC /* MainStoryboard.storyboard */; };
+		D3B01DBB173A29C8002B4BBC /* TestBLEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B01DBA173A29C8002B4BBC /* TestBLEViewController.m */; };
+		D3B01DC2173A29FD002B4BBC /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B01DC1173A29FD002B4BBC /* CoreBluetooth.framework */; };
+		D3B921EA1755A07E00DF6F79 /* capture.txt in Resources */ = {isa = PBXBuildFile; fileRef = D3B921E91755A07E00DF6F79 /* capture.txt */; };
+		D3E0C3FF182B79C400FA2D21 /* cap.txt in Resources */ = {isa = PBXBuildFile; fileRef = D3E0C3FE182B79C400FA2D21 /* cap.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D3B01D9B173A29C8002B4BBC /* TestBLE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestBLE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3B01D9E173A29C8002B4BBC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D3B01DA0173A29C8002B4BBC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D3B01DA2173A29C8002B4BBC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D3B01DA6173A29C8002B4BBC /* TestBLE-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestBLE-Info.plist"; sourceTree = "<group>"; };
+		D3B01DA8173A29C8002B4BBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D3B01DAA173A29C8002B4BBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D3B01DAC173A29C8002B4BBC /* TestBLE-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestBLE-Prefix.pch"; sourceTree = "<group>"; };
+		D3B01DAD173A29C8002B4BBC /* TestBLEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestBLEAppDelegate.h; sourceTree = "<group>"; };
+		D3B01DAE173A29C8002B4BBC /* TestBLEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestBLEAppDelegate.m; sourceTree = "<group>"; };
+		D3B01DB0173A29C8002B4BBC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D3B01DB2173A29C8002B4BBC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D3B01DB4173A29C8002B4BBC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D3B01DB7173A29C8002B4BBC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		D3B01DB9173A29C8002B4BBC /* TestBLEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestBLEViewController.h; sourceTree = "<group>"; };
+		D3B01DBA173A29C8002B4BBC /* TestBLEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestBLEViewController.m; sourceTree = "<group>"; };
+		D3B01DC1173A29FD002B4BBC /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		D3B921E91755A07E00DF6F79 /* capture.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = capture.txt; sourceTree = "<group>"; };
+		D3E0C3FE182B79C400FA2D21 /* cap.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cap.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3B01D98173A29C8002B4BBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3B01DC2173A29FD002B4BBC /* CoreBluetooth.framework in Frameworks */,
+				D3B01D9F173A29C8002B4BBC /* UIKit.framework in Frameworks */,
+				D3B01DA1173A29C8002B4BBC /* Foundation.framework in Frameworks */,
+				D3B01DA3173A29C8002B4BBC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3B01D92173A29C8002B4BBC = {
+			isa = PBXGroup;
+			children = (
+				D3B01DC1173A29FD002B4BBC /* CoreBluetooth.framework */,
+				D3B01DA4173A29C8002B4BBC /* TestBLE */,
+				D3B01D9D173A29C8002B4BBC /* Frameworks */,
+				D3B01D9C173A29C8002B4BBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3B01D9C173A29C8002B4BBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3B01D9B173A29C8002B4BBC /* TestBLE.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3B01D9D173A29C8002B4BBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3B01D9E173A29C8002B4BBC /* UIKit.framework */,
+				D3B01DA0173A29C8002B4BBC /* Foundation.framework */,
+				D3B01DA2173A29C8002B4BBC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3B01DA4173A29C8002B4BBC /* TestBLE */ = {
+			isa = PBXGroup;
+			children = (
+				D3B01DAD173A29C8002B4BBC /* TestBLEAppDelegate.h */,
+				D3B01DAE173A29C8002B4BBC /* TestBLEAppDelegate.m */,
+				D3B01DB6173A29C8002B4BBC /* MainStoryboard.storyboard */,
+				D3B01DB9173A29C8002B4BBC /* TestBLEViewController.h */,
+				D3B01DBA173A29C8002B4BBC /* TestBLEViewController.m */,
+				D3E0C3FE182B79C400FA2D21 /* cap.txt */,
+				D3B921E91755A07E00DF6F79 /* capture.txt */,
+				D3B01DA5173A29C8002B4BBC /* Supporting Files */,
+			);
+			path = TestBLE;
+			sourceTree = "<group>";
+		};
+		D3B01DA5173A29C8002B4BBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3B01DA6173A29C8002B4BBC /* TestBLE-Info.plist */,
+				D3B01DA7173A29C8002B4BBC /* InfoPlist.strings */,
+				D3B01DAA173A29C8002B4BBC /* main.m */,
+				D3B01DAC173A29C8002B4BBC /* TestBLE-Prefix.pch */,
+				D3B01DB0173A29C8002B4BBC /* Default.png */,
+				D3B01DB2173A29C8002B4BBC /* Default@2x.png */,
+				D3B01DB4173A29C8002B4BBC /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3B01D9A173A29C8002B4BBC /* TestBLE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3B01DBE173A29C8002B4BBC /* Build configuration list for PBXNativeTarget "TestBLE" */;
+			buildPhases = (
+				D3B01D97173A29C8002B4BBC /* Sources */,
+				D3B01D98173A29C8002B4BBC /* Frameworks */,
+				D3B01D99173A29C8002B4BBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestBLE;
+			productName = TestBLE;
+			productReference = D3B01D9B173A29C8002B4BBC /* TestBLE.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3B01D93173A29C8002B4BBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TestBLE;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = NeuroSky;
+			};
+			buildConfigurationList = D3B01D96173A29C8002B4BBC /* Build configuration list for PBXProject "TestBLE" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D3B01D92173A29C8002B4BBC;
+			productRefGroup = D3B01D9C173A29C8002B4BBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3B01D9A173A29C8002B4BBC /* TestBLE */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3B01D99173A29C8002B4BBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3B01DA9173A29C8002B4BBC /* InfoPlist.strings in Resources */,
+				D3B01DB1173A29C8002B4BBC /* Default.png in Resources */,
+				D3B01DB3173A29C8002B4BBC /* Default@2x.png in Resources */,
+				D3B01DB5173A29C8002B4BBC /* Default-568h@2x.png in Resources */,
+				D3E0C3FF182B79C400FA2D21 /* cap.txt in Resources */,
+				D3B01DB8173A29C8002B4BBC /* MainStoryboard.storyboard in Resources */,
+				D3B921EA1755A07E00DF6F79 /* capture.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3B01D97173A29C8002B4BBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3B01DAB173A29C8002B4BBC /* main.m in Sources */,
+				D3B01DAF173A29C8002B4BBC /* TestBLEAppDelegate.m in Sources */,
+				D3B01DBB173A29C8002B4BBC /* TestBLEViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D3B01DA7173A29C8002B4BBC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3B01DA8173A29C8002B4BBC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D3B01DB6173A29C8002B4BBC /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3B01DB7173A29C8002B4BBC /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3B01DBC173A29C8002B4BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D3B01DBD173A29C8002B4BBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3B01DBF173A29C8002B4BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestBLE/TestBLE-Prefix.pch";
+				INFOPLIST_FILE = "TestBLE/TestBLE-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D3B01DC0173A29C8002B4BBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestBLE/TestBLE-Prefix.pch";
+				INFOPLIST_FILE = "TestBLE/TestBLE-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3B01D96173A29C8002B4BBC /* Build configuration list for PBXProject "TestBLE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3B01DBC173A29C8002B4BBC /* Debug */,
+				D3B01DBD173A29C8002B4BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3B01DBE173A29C8002B4BBC /* Build configuration list for PBXNativeTarget "TestBLE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3B01DBF173A29C8002B4BBC /* Debug */,
+				D3B01DC0173A29C8002B4BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3B01D93173A29C8002B4BBC /* Project object */;
+}

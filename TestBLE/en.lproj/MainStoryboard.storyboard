@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--TestBLE View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="TestBLEViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XXd-jh-E5o"/>
+                        <viewControllerLayoutGuide type="bottom" id="qd5-4p-2B3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmG-xd-qRQ">
+                                <rect key="frame" x="40" y="75" width="39" height="30"/>
+                                <state key="normal" title="NULL">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="OpenButtonClicked:" destination="2" eventType="touchUpInside" id="AwL-Jl-aQi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQs-kd-HxI">
+                                <rect key="frame" x="234" y="75" width="39" height="30"/>
+                                <state key="normal" title="NULL">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="CloseButtonClicked:" destination="2" eventType="touchUpInside" id="eSv-rZ-QhT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xp-Xr-l9f">
+                                <rect key="frame" x="40" y="186" width="68" height="30"/>
+                                <state key="normal" title="SendData">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SendButtonClicked:" destination="2" eventType="touchUpInside" id="tM2-rN-uaN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tips" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="201" translatesAutoresizingMaskIntoConstraints="NO" id="vHE-no-qzP">
+                                <rect key="frame" x="56" y="323" width="201" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="201" id="6gh-yB-IRE"/>
+                                    <constraint firstAttribute="height" constant="101" id="lVG-7w-d1X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vHE-no-qzP" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="56" id="1Us-VY-JMe"/>
+                            <constraint firstAttribute="trailing" secondItem="AQs-kd-HxI" secondAttribute="trailing" constant="47" id="7Cq-lp-KWH"/>
+                            <constraint firstAttribute="bottom" secondItem="vHE-no-qzP" secondAttribute="bottom" constant="144" id="MeB-Hx-Cur"/>
+                            <constraint firstItem="AQs-kd-HxI" firstAttribute="baseline" secondItem="lmG-xd-qRQ" secondAttribute="baseline" id="R1L-5M-cKG"/>
+                            <constraint firstItem="9Xp-Xr-l9f" firstAttribute="leading" secondItem="lmG-xd-qRQ" secondAttribute="leading" id="ch2-GT-egf"/>
+                            <constraint firstItem="lmG-xd-qRQ" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="40" id="fao-sJ-a1y"/>
+                            <constraint firstItem="lmG-xd-qRQ" firstAttribute="top" secondItem="3" secondAttribute="top" constant="75" id="out-4S-RJT"/>
+                            <constraint firstItem="9Xp-Xr-l9f" firstAttribute="top" secondItem="3" secondAttribute="top" constant="186" id="pmI-1w-dPb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="SendDataButton" destination="9Xp-Xr-l9f" id="yIR-ZI-jFv"/>
+                        <outlet property="Tipslabel" destination="vHE-no-qzP" id="HcM-vM-lFM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
